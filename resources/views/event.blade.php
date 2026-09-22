@@ -150,14 +150,14 @@
                     </div>
                     <div class="glass-card p-4">
                         <p class="font-medium text-slate-900 dark:text-white">Refund policy</p>
-                        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">No refunds. Tickets may be transferred by contacting the organizer before the event.</p>
+                        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">No refunds.</p>
                     </div>
                 </div>
             </section>
 
             <section>
                 <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Location</h2>
-                <p class="mt-3 text-slate-600 dark:text-slate-300">Online event — a join link is emailed with your ticket confirmation.</p>
+                <p class="mt-3 text-slate-600 dark:text-slate-300">Online event.</p>
             </section>
 
             <section>
