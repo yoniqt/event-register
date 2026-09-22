@@ -63,22 +63,14 @@
                     moves that actually move the needle in your first 1,000 customers.
                 </p>
 
-                <div class="mt-6 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-slate-200 bg-slate-50 p-3 dark:border-slate-800 dark:bg-slate-900/60">
-                    <div class="flex items-center gap-3">
-                        <img src="{{ $organizer['logo'] }}" alt="{{ $organizer['name'] }}" class="h-10 w-10 rounded-full border border-slate-200 object-cover dark:border-slate-700">
-                        <div>
-                            @if ($organizer['top_organizer'])
-                                <span class="inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-400">Top organizer</span>
-                            @endif
-                            <p class="text-sm text-slate-600 dark:text-slate-300">by <span class="font-semibold text-slate-900 dark:text-white">{{ $organizer['name'] }}</span></p>
-                            <p class="text-xs text-slate-500 dark:text-slate-400">
-                                {{ $organizer['followers'] }} followers &middot; {{ $organizer['events_hosted'] }} events &middot; {{ $organizer['years_hosting'] }} hosting &middot; {{ $organizer['total_attendees'] }} attendees
-                            </p>
-                        </div>
+                <div class="mt-6 flex flex-wrap items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 p-3 dark:border-slate-800 dark:bg-slate-900/60">
+                    <img src="{{ $organizer['logo'] }}" alt="{{ $organizer['name'] }}" class="h-10 w-10 rounded-full border border-slate-200 object-cover dark:border-slate-700">
+                    <div>
+                        @if ($organizer['top_organizer'])
+                            <span class="inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-amber-700 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-400">Top organizer</span>
+                        @endif
+                        <p class="text-sm text-slate-600 dark:text-slate-300">by <span class="font-semibold text-slate-900 dark:text-white">{{ $organizer['name'] }}</span></p>
                     </div>
-                    <button type="button" class="rounded-full border border-slate-300 bg-white px-4 py-1.5 text-sm font-medium text-slate-700 transition hover:border-orange-400 hover:text-orange-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-orange-500/50 dark:hover:text-orange-400">
-                        Follow
-                    </button>
                 </div>
 
                 <div class="mt-4 space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
@@ -121,10 +113,9 @@
                     topic and more on the preparation behind it.
                 </p>
                 <p class="mt-3 text-slate-600 dark:text-slate-300">
-                    In this session, <span class="text-orange-600 dark:text-orange-400">{{ $speakers[0]['name'] }}</span> and
-                    <span class="text-orange-600 dark:text-orange-400">{{ $speakers[1]['name'] }}</span> walk through what actually
-                    happens behind the scenes of a growth-stage startup — the tools, the rituals, and the calls that
-                    don't make it into the highlight reel.
+                    In this session, <span class="text-orange-600 dark:text-orange-400">{{ $speakers[0]['name'] }}</span> walks
+                    through what actually happens behind the scenes of a growth-stage startup — the tools, the rituals,
+                    and the calls that don't make it into the highlight reel.
                 </p>
             </section>
 

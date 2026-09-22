@@ -19,10 +19,6 @@ class EventController extends Controller
                 'name' => 'Certicode',
                 'logo' => '/images/pic.jpg',
                 'top_organizer' => true,
-                'followers' => '312',
-                'events_hosted' => '48+',
-                'years_hosting' => '4y',
-                'total_attendees' => '12.4k',
             ],
             'speakers' => [
                 [
@@ -30,24 +26,6 @@ class EventController extends Controller
                     'role' => 'Founder of Certicode',
                     'avatar' => '/images/pic.jpg',
                     'headliner' => true,
-                ],
-                [
-                    'name' => 'Maya Chen',
-                    'role' => 'Co-founder, Northwind Labs',
-                    'avatar' => 'https://i.pravatar.cc/150?img=32',
-                    'headliner' => true,
-                ],
-                [
-                    'name' => 'Ravi Osei',
-                    'role' => 'Head of Growth, Fieldnote',
-                    'avatar' => 'https://i.pravatar.cc/150?img=12',
-                    'headliner' => true,
-                ],
-                [
-                    'name' => 'Priya Patel',
-                    'role' => 'Startup Advisor',
-                    'avatar' => 'https://i.pravatar.cc/150?img=47',
-                    'headliner' => false,
                 ],
             ],
             'faqs' => [
