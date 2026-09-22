@@ -2,7 +2,7 @@
 
 @section('title', 'Growth Summit 2026 — Register')
 @section('og-title', 'Growth Summit 2026 — Register')
-@section('og-description', 'A one-hour, practitioner-led session on the tools, hiring decisions, and go-to-market moves that actually move the needle in your first 1,000 customers.')
+@section('og-description', 'A 5-day practitioner-led seminar on the tools, hiring decisions, and go-to-market moves that actually move the needle in your first 1,000 customers.')
 @section('og-image', url('/og-image.jpg'))
 @section('force-light', '1')
 
@@ -37,7 +37,7 @@
                             </svg>
                             {{ $event['urgency'] }}
                         </span>
-                        <span class="rounded-full border border-orange-300 bg-orange-50 px-3 py-1 text-orange-700 dark:border-orange-500/30 dark:bg-orange-500/10 dark:text-orange-400">Fri, Oct 16, 2026 · 6:00 PM</span>
+                        <span class="rounded-full border border-orange-300 bg-orange-50 px-3 py-1 text-orange-700 dark:border-orange-500/30 dark:bg-orange-500/10 dark:text-orange-400">5-Day Seminar</span>
                         <span class="rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-amber-700 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-400">Online</span>
                     </div>
                     <div class="flex items-center gap-2">
@@ -59,7 +59,7 @@
                     Growth Summit — <span class="glow-text">Scaling Your Startup</span> in 2026
                 </h1>
                 <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
-                    A one-hour, practitioner-led session on the tools, hiring decisions, and go-to-market
+                    A 5-day practitioner-led seminar on the tools, hiring decisions, and go-to-market
                     moves that actually move the needle in your first 1,000 customers.
                 </p>
 
@@ -152,7 +152,7 @@
                     <div class="glass-card p-4">
                         <p class="font-medium text-slate-900 dark:text-white">Highlights</p>
                         <ul class="mt-2 space-y-1 text-sm text-slate-600 dark:text-slate-300">
-                            <li>1 hour, live Q&amp;A included</li>
+                            <li>5-day seminar, live Q&amp;A included</li>
                             <li>Online — join from anywhere</li>
                         </ul>
                     </div>
@@ -195,7 +195,7 @@
                 <dl class="mt-5 space-y-2 border-t border-slate-200 pt-4 text-sm text-slate-600 dark:border-slate-800 dark:text-slate-300">
                     <div class="flex justify-between"><dt>Followers</dt><dd class="text-amber-600 dark:text-amber-400">{{ $event['followers'] }}</dd></div>
                     <div class="flex justify-between"><dt>Format</dt><dd>Online</dd></div>
-                    <div class="flex justify-between"><dt>Duration</dt><dd>1 hour</dd></div>
+                    <div class="flex justify-between"><dt>Duration</dt><dd>5 days</dd></div>
                 </dl>
             </div>
         </aside>

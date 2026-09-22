@@ -10,8 +10,8 @@ class EventController extends Controller
     {
         return view('event', [
             'event' => [
-                'date_label' => 'Fri, Oct 16 · 6:00 PM PST',
-                'date_full' => 'Friday, October 16 · 6:00 - 7:00 PM PST',
+                'date_label' => 'Oct 16 – 20, 2026',
+                'date_full' => 'October 16 – 20, 2026 · 5-Day Seminar',
                 'location_label' => 'Online event',
                 'followers' => '312',
                 'urgency' => 'Few spots left',
@@ -52,11 +52,11 @@ class EventController extends Controller
                 ],
                 [
                     'question' => 'How does it run?',
-                    'answer' => 'A 40-minute walkthrough followed by 20 minutes of live Q&A. The recording is sent to every registrant afterward.',
+                    'answer' => 'A 5-day seminar — join whichever sessions fit your schedule during the week. Recordings are sent to every registrant afterward.',
                 ],
                 [
                     'question' => 'When does it take place?',
-                    'answer' => 'Friday, October 16, 2026 at 6:00 PM PST. The event lasts about one hour.',
+                    'answer' => 'October 16 – 20, 2026. It\'s a 5-day seminar, so you can pick whichever days work best for you.',
                 ],
             ],
         ]);
