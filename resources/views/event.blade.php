@@ -4,6 +4,7 @@
 @section('og-title', 'Growth Summit 2026 — Register')
 @section('og-description', 'A one-hour, practitioner-led session on the tools, hiring decisions, and go-to-market moves that actually move the needle in your first 1,000 customers.')
 @section('og-image', url('/og-image.jpg'))
+@section('force-light', '1')
 
 @section('content')
 <div class="min-h-full bg-white dark:bg-obsidian">
@@ -14,7 +15,6 @@
                 Certicode
             </a>
             <div class="flex items-center gap-3">
-                @include('partials.theme-toggle')
                 <a href="#register" class="hidden rounded-full bg-orange-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-orange-500/20 transition-all hover:bg-orange-500 hover:shadow-orange-500/40 sm:inline-block">
                     Register
                 </a>

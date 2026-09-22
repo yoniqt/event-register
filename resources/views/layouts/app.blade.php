@@ -19,13 +19,15 @@
     <meta name="twitter:title" content="@yield('og-title', config('app.name'))">
     <meta name="twitter:description" content="@yield('og-description', 'Register for upcoming events on ' . config('app.name') . '.')">
     <meta name="twitter:image" content="@yield('og-image', url('/og-image.jpg'))">
-    <script>
-        (function () {
-            var stored = localStorage.getItem('theme');
-            var isDark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-            document.documentElement.classList.toggle('dark', isDark);
-        })();
-    </script>
+    @unless ($__env->hasSection('force-light'))
+        <script>
+            (function () {
+                var stored = localStorage.getItem('theme');
+                var isDark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.classList.toggle('dark', isDark);
+            })();
+        </script>
+    @endunless
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="h-full bg-white text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
