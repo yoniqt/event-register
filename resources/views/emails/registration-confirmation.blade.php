@@ -3,7 +3,7 @@
 
 Hi {{ $registration->full_name }},
 
-Thanks for registering for **Growth Summit — Scaling Your Startup in 2026**. Here are your details:
+Thanks for registering for **The Autonomous Professional: Unlocking AI & Automation**. Here are your details:
 
 <x-mail::panel>
 Ticket code: **{{ $registration->ticket_code }}**<br>

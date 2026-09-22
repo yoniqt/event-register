@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Growth Summit 2026 — Register')
-@section('og-title', 'Growth Summit 2026 — Register')
-@section('og-description', 'A 5-day practitioner-led seminar on the tools, hiring decisions, and go-to-market moves that actually move the needle in your first 1,000 customers.')
+@section('title', 'The Autonomous Professional: Unlocking AI & Automation — Register')
+@section('og-title', 'The Autonomous Professional: Unlocking AI & Automation — Register')
+@section('og-description', 'An intensive seminar on combining AI and workflow automation to eliminate repetitive tasks and build smart, autonomous pipelines.')
 @section('og-image', url('/og-image.jpg'))
 @section('force-light', '1')
 
@@ -56,11 +56,11 @@
                     </div>
                 </div>
                 <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl dark:text-white">
-                    Growth Summit — <span class="glow-text">Scaling Your Startup</span> in 2026
+                    The Autonomous Professional: <span class="glow-text">Unlocking AI & Automation</span>
                 </h1>
                 <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
-                    A 5-day practitioner-led seminar on the tools, hiring decisions, and go-to-market
-                    moves that actually move the needle in your first 1,000 customers.
+                    An intensive seminar on combining AI and workflow automation to eliminate repetitive
+                    tasks and build smart, autonomous pipelines.
                 </p>
 
                 <div class="mt-6 flex flex-wrap items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 p-3 dark:border-slate-800 dark:bg-slate-900/60">
@@ -107,15 +107,16 @@
             <section>
                 <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Overview</h2>
                 <p class="mt-3 text-slate-600 dark:text-slate-300">
-                    Workshops and live trainings are the fastest way to get a new playbook to actually stick with a
-                    team — not just the founders, but everyone touching the roadmap. Whether it's hands-on execution
-                    or a framework that needs to be translated into your day-to-day: the outcome depends less on the
-                    topic and more on the preparation behind it.
+                    Welcome to the Autonomous Professional — your fast-track guide to transforming repetitive
+                    tasks into streamlined, autonomous workflows. In today's digital landscape, the secret to
+                    high productivity isn't working longer hours; it is leveraging the right combination of
+                    artificial intelligence and workflow automation.
                 </p>
                 <p class="mt-3 text-slate-600 dark:text-slate-300">
-                    In this session, <span class="text-orange-600 dark:text-orange-400">{{ $speakers[0]['name'] }}</span> walks
-                    through what actually happens behind the scenes of a growth-stage startup — the tools, the rituals,
-                    and the calls that don't make it into the highlight reel.
+                    This intensive seminar bridges the gap between advanced technology and everyday application.
+                    Designed for professionals, creators, and tech enthusiasts, this session — led by
+                    <span class="text-orange-600 dark:text-orange-400">{{ $speakers[0]['name'] }}</span> — will
+                    demystify how artificial intelligence and modern integration tools can work together seamlessly.
                 </p>
             </section>
 
@@ -207,7 +208,7 @@
                     <h3 class="text-sm font-semibold text-white">Organizer</h3>
                     <ul class="mt-3 space-y-2 text-sm">
                         <li><a href="#" class="transition hover:text-orange-400">About {{ $organizer['name'] }}</a></li>
-                        <li><a href="#" class="transition hover:text-orange-400">Contact organizer</a></li>
+                        <li><a href="mailto:{{ $event['contact_email'] }}" class="transition hover:text-orange-400">Contact organizer</a></li>
                         <li><a href="#" class="transition hover:text-orange-400">Report this event</a></li>
                     </ul>
                 </div>
@@ -224,7 +225,7 @@
                     <ul class="mt-3 space-y-2 text-sm">
                         <li><a href="#" class="transition hover:text-orange-400">X (Twitter)</a></li>
                         <li><a href="#" class="transition hover:text-orange-400">LinkedIn</a></li>
-                        <li><a href="#" class="transition hover:text-orange-400">Email us</a></li>
+                        <li><a href="mailto:{{ $event['contact_email'] }}" class="transition hover:text-orange-400">Email us</a></li>
                     </ul>
                 </div>
             </div>

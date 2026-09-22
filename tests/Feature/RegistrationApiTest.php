@@ -17,7 +17,7 @@ class RegistrationApiTest extends TestCase
         $response = $this->get('/');
 
         $response->assertStatus(200);
-        $response->assertSee('Growth Summit');
+        $response->assertSee('The Autonomous Professional');
     }
 
     public function test_it_registers_an_attendee(): void
