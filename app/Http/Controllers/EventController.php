@@ -10,15 +10,14 @@ class EventController extends Controller
     {
         return view('event', [
             'event' => [
-                'date_label' => 'Oct 16 – 20, 2026',
-                'date_full' => 'October 16 – 20, 2026 · 5-Day Seminar',
+                'date_label' => '5-Day Seminar',
+                'date_full' => '5-Day Seminar',
                 'location_label' => 'Online event',
-                'followers' => '312',
                 'urgency' => 'Few spots left',
             ],
             'organizer' => [
-                'name' => 'Growth Summit Collective',
-                'logo' => 'https://i.pravatar.cc/150?img=64',
+                'name' => 'Certicode',
+                'logo' => '/images/pic.jpg',
                 'top_organizer' => true,
                 'followers' => '312',
                 'events_hosted' => '48+',
@@ -26,6 +25,12 @@ class EventController extends Controller
                 'total_attendees' => '12.4k',
             ],
             'speakers' => [
+                [
+                    'name' => 'Tom Oliver Chua',
+                    'role' => 'Founder of Certicode',
+                    'avatar' => '/images/pic.jpg',
+                    'headliner' => true,
+                ],
                 [
                     'name' => 'Maya Chen',
                     'role' => 'Co-founder, Northwind Labs',
@@ -56,7 +61,7 @@ class EventController extends Controller
                 ],
                 [
                     'question' => 'When does it take place?',
-                    'answer' => 'October 16 – 20, 2026. It\'s a 5-day seminar, so you can pick whichever days work best for you.',
+                    'answer' => 'It\'s a 5-day seminar, so you can pick whichever days work best for you.',
                 ],
             ],
         ]);

@@ -8,7 +8,7 @@ Thanks for registering for **Growth Summit — Scaling Your Startup in 2026**. H
 <x-mail::panel>
 Ticket code: **{{ $registration->ticket_code }}**<br>
 Tickets: **{{ $registration->ticket_quantity }}**<br>
-When: **October 16 – 20, 2026 · 5-Day Seminar**<br>
+When: **5-Day Seminar**<br>
 Where: **Online** — a join link is emailed closer to the event
 </x-mail::panel>
 

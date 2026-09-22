@@ -193,7 +193,6 @@
                     Register
                 </button>
                 <dl class="mt-5 space-y-2 border-t border-slate-200 pt-4 text-sm text-slate-600 dark:border-slate-800 dark:text-slate-300">
-                    <div class="flex justify-between"><dt>Followers</dt><dd class="text-amber-600 dark:text-amber-400">{{ $event['followers'] }}</dd></div>
                     <div class="flex justify-between"><dt>Format</dt><dd>Online</dd></div>
                     <div class="flex justify-between"><dt>Duration</dt><dd>5 days</dd></div>
                 </dl>
