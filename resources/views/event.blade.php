@@ -3,7 +3,7 @@
 @section('title', 'Growth Summit 2026 — Register')
 @section('og-title', 'Growth Summit 2026 — Register')
 @section('og-description', 'A one-hour, practitioner-led session on the tools, hiring decisions, and go-to-market moves that actually move the needle in your first 1,000 customers.')
-@section('og-image', 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1200&h=630&q=80')
+@section('og-image', url('/og-image.jpg'))
 
 @section('content')
 <div class="min-h-full bg-white dark:bg-obsidian">
