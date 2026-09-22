@@ -64,6 +64,8 @@ if (backdrop) {
                     full_name: form.full_name.value,
                     email: form.email.value,
                     contact_number: form.contact_number.value,
+                    location: form.location.value,
+                    organization: form.organization.value,
                 }),
             });
 

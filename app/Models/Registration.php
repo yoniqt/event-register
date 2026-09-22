@@ -15,6 +15,8 @@ class Registration extends Model
         'full_name',
         'email',
         'contact_number',
+        'location',
+        'organization',
         'ticket_quantity',
         'ticket_code',
         'status',

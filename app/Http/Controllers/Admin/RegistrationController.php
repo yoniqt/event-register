@@ -20,6 +20,8 @@ class RegistrationController extends Controller
             $query->where(function ($inner) use ($search) {
                 $inner->where('full_name', 'like', "%{$search}%")
                     ->orWhere('email', 'like', "%{$search}%")
+                    ->orWhere('location', 'like', "%{$search}%")
+                    ->orWhere('organization', 'like', "%{$search}%")
                     ->orWhere('ticket_code', 'like', "%{$search}%");
             });
         }

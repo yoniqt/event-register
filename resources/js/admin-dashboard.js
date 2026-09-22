@@ -23,7 +23,7 @@ if (tableBody) {
 
     const renderRows = (registrations) => {
         if (registrations.length === 0) {
-            tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="4">No registrations found.</td></tr>';
+            tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="6">No registrations found.</td></tr>';
             return;
         }
 
@@ -32,13 +32,15 @@ if (tableBody) {
                 <td class="px-4 py-3 font-medium text-slate-900 dark:text-white">${escapeHtml(registration.full_name)}</td>
                 <td class="px-4 py-3 text-slate-600 dark:text-slate-300">${escapeHtml(registration.email)}</td>
                 <td class="px-4 py-3 text-slate-600 dark:text-slate-300">${escapeHtml(registration.contact_number)}</td>
+                <td class="px-4 py-3 text-slate-600 dark:text-slate-300">${escapeHtml(registration.location)}</td>
+                <td class="px-4 py-3 text-slate-600 dark:text-slate-300">${escapeHtml(registration.organization)}</td>
                 <td class="px-4 py-3 text-slate-500 dark:text-slate-400">${formatDate(registration.created_at)}</td>
             </tr>
         `).join('');
     };
 
     const loadRegistrations = async () => {
-        tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="4">Loading…</td></tr>';
+        tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="6">Loading…</td></tr>';
 
         const params = new URLSearchParams({ page: currentPage });
         if (searchInput.value.trim()) {
@@ -50,7 +52,7 @@ if (tableBody) {
         });
 
         if (!response.ok) {
-            tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-red-500" colspan="4">Failed to load registrations.</td></tr>';
+            tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-red-500" colspan="6">Failed to load registrations.</td></tr>';
             return;
         }
 

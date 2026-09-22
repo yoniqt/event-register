@@ -119,6 +119,8 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Location</th>
+                <th>Organization/School</th>
                 <th>Registered</th>
             </tr>
         </thead>
@@ -128,11 +130,13 @@
                     <td>{{ $registration->full_name }}</td>
                     <td>{{ $registration->email }}</td>
                     <td>{{ $registration->contact_number }}</td>
+                    <td>{{ $registration->location }}</td>
+                    <td>{{ $registration->organization }}</td>
                     <td>{{ $registration->created_at?->format('M j, Y g:i A') }}</td>
                 </tr>
             @empty
                 <tr>
-                    <td colspan="4" style="text-align:center; color:#94a3b8; padding:16px;">No registrations yet.</td>
+                    <td colspan="6" style="text-align:center; color:#94a3b8; padding:16px;">No registrations yet.</td>
                 </tr>
             @endforelse
         </tbody>

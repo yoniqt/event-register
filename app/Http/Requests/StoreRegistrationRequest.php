@@ -26,6 +26,8 @@ class StoreRegistrationRequest extends FormRequest
             'full_name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255'],
             'contact_number' => ['required', 'string', 'max:30'],
+            'location' => ['required', 'string', 'max:255'],
+            'organization' => ['required', 'string', 'max:255'],
         ];
     }
 }

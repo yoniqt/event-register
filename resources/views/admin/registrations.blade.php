@@ -26,7 +26,7 @@
         </div>
 
         <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <input type="search" placeholder="Search by name, email, or ticket code" data-search
+            <input type="search" placeholder="Search by name, email, organization, or ticket code" data-search
                    class="w-full max-w-sm rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder-slate-400 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
             <a href="{{ route('admin.api.registrations.export') }}" class="inline-flex items-center justify-center rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-medium text-amber-700 transition hover:bg-amber-100 dark:border-amber-500/30 dark:bg-amber-500/10 dark:text-amber-400 dark:hover:bg-amber-500/20">
                 Export PDF
@@ -40,11 +40,13 @@
                         <th class="px-4 py-3">Name</th>
                         <th class="px-4 py-3">Email</th>
                         <th class="px-4 py-3">Phone</th>
+                        <th class="px-4 py-3">Location</th>
+                        <th class="px-4 py-3">Organization/School</th>
                         <th class="px-4 py-3">Registered</th>
                     </tr>
                 </thead>
                 <tbody data-table-body class="divide-y divide-slate-200 dark:divide-slate-800">
-                    <tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="4">Loading…</td></tr>
+                    <tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="6">Loading…</td></tr>
                 </tbody>
             </table>
         </div>

@@ -21,6 +21,8 @@ class RegistrationFactory extends Factory
             'full_name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
             'contact_number' => $this->faker->numerify('+639########'),
+            'location' => $this->faker->city(),
+            'organization' => $this->faker->company(),
             'ticket_quantity' => $this->faker->numberBetween(1, 4),
             'ticket_code' => Registration::generateTicketCode(),
             'status' => 'confirmed',
