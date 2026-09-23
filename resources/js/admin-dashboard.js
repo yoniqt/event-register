@@ -23,13 +23,14 @@ if (tableBody) {
 
     const renderRows = (registrations) => {
         if (registrations.length === 0) {
-            tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="6">No registrations found.</td></tr>';
+            tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="7">No registrations found.</td></tr>';
             return;
         }
 
         tableBody.innerHTML = registrations.map((registration) => `
             <tr class="transition-colors hover:bg-slate-50 dark:hover:bg-slate-900/60">
-                <td class="px-4 py-3 font-medium text-slate-900 dark:text-white">${escapeHtml(registration.full_name)}</td>
+                <td class="px-4 py-3 font-medium text-slate-900 dark:text-white">${escapeHtml(registration.first_name)}</td>
+                <td class="px-4 py-3 font-medium text-slate-900 dark:text-white">${escapeHtml(registration.last_name)}</td>
                 <td class="px-4 py-3 text-slate-600 dark:text-slate-300">${escapeHtml(registration.email)}</td>
                 <td class="px-4 py-3 text-slate-600 dark:text-slate-300">${escapeHtml(registration.contact_number)}</td>
                 <td class="px-4 py-3 text-slate-600 dark:text-slate-300">${escapeHtml(registration.location)}</td>
@@ -40,7 +41,7 @@ if (tableBody) {
     };
 
     const loadRegistrations = async () => {
-        tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="6">Loading…</td></tr>';
+        tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="7">Loading…</td></tr>';
 
         const params = new URLSearchParams({ page: currentPage });
         if (searchInput.value.trim()) {
@@ -52,7 +53,7 @@ if (tableBody) {
         });
 
         if (!response.ok) {
-            tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-red-500" colspan="6">Failed to load registrations.</td></tr>';
+            tableBody.innerHTML = '<tr><td class="px-4 py-6 text-center text-red-500" colspan="7">Failed to load registrations.</td></tr>';
             return;
         }
 

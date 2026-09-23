@@ -37,7 +37,8 @@
             <table class="min-w-full divide-y divide-slate-200 text-sm dark:divide-slate-800">
                 <thead class="bg-slate-50 text-left text-xs font-semibold uppercase tracking-wide text-slate-500 dark:bg-slate-900/60 dark:text-slate-400">
                     <tr>
-                        <th class="px-4 py-3">Name</th>
+                        <th class="px-4 py-3">First Name</th>
+                        <th class="px-4 py-3">Last Name</th>
                         <th class="px-4 py-3">Email</th>
                         <th class="px-4 py-3">Phone</th>
                         <th class="px-4 py-3">Location</th>
@@ -46,7 +47,7 @@
                     </tr>
                 </thead>
                 <tbody data-table-body class="divide-y divide-slate-200 dark:divide-slate-800">
-                    <tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="6">Loading…</td></tr>
+                    <tr><td class="px-4 py-6 text-center text-slate-400 dark:text-slate-500" colspan="7">Loading…</td></tr>
                 </tbody>
             </table>
         </div>

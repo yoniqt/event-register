@@ -45,14 +45,14 @@ class AdminDashboardTest extends TestCase
     public function test_admin_can_search_registrations(): void
     {
         $admin = User::factory()->create();
-        Registration::factory()->create(['full_name' => 'Maya Chen']);
-        Registration::factory()->create(['full_name' => 'Ravi Osei']);
+        Registration::factory()->create(['first_name' => 'Maya', 'last_name' => 'Chen']);
+        Registration::factory()->create(['first_name' => 'Ravi', 'last_name' => 'Osei']);
 
         $response = $this->actingAs($admin)->getJson('/api/admin/registrations?search=Maya');
 
         $response->assertOk();
         $response->assertJsonCount(1, 'data');
-        $response->assertJsonPath('data.0.full_name', 'Maya Chen');
+        $response->assertJsonPath('data.0.first_name', 'Maya');
     }
 
     public function test_admin_can_export_registrations_as_pdf(): void

@@ -116,7 +116,8 @@
     <table>
         <thead>
             <tr>
-                <th>Name</th>
+                <th>First Name</th>
+                <th>Last Name</th>
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Location</th>
@@ -127,7 +128,8 @@
         <tbody>
             @forelse ($registrations as $registration)
                 <tr>
-                    <td>{{ $registration->full_name }}</td>
+                    <td>{{ $registration->first_name }}</td>
+                    <td>{{ $registration->last_name }}</td>
                     <td>{{ $registration->email }}</td>
                     <td>{{ $registration->contact_number }}</td>
                     <td>{{ $registration->location }}</td>
@@ -136,7 +138,7 @@
                 </tr>
             @empty
                 <tr>
-                    <td colspan="6" style="text-align:center; color:#94a3b8; padding:16px;">No registrations yet.</td>
+                    <td colspan="7" style="text-align:center; color:#94a3b8; padding:16px;">No registrations yet.</td>
                 </tr>
             @endforelse
         </tbody>

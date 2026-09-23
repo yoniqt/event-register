@@ -249,10 +249,17 @@
                 </div>
                 <form id="registration-form" class="mt-4 space-y-4">
                     @csrf
-                    <div>
-                        <label class="block text-sm font-medium text-slate-600 dark:text-slate-300" for="full_name">Full name</label>
-                        <input id="full_name" name="full_name" type="text" required class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder-slate-400 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
-                        <p class="mt-1 hidden text-sm text-orange-600 dark:text-orange-400" data-error="full_name"></p>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-600 dark:text-slate-300" for="first_name">First name</label>
+                            <input id="first_name" name="first_name" type="text" required class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder-slate-400 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
+                            <p class="mt-1 hidden text-sm text-orange-600 dark:text-orange-400" data-error="first_name"></p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-600 dark:text-slate-300" for="last_name">Last name</label>
+                            <input id="last_name" name="last_name" type="text" required class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder-slate-400 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder-slate-500">
+                            <p class="mt-1 hidden text-sm text-orange-600 dark:text-orange-400" data-error="last_name"></p>
+                        </div>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-slate-600 dark:text-slate-300" for="email">Email address</label>

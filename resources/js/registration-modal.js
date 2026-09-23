@@ -61,7 +61,8 @@ if (backdrop) {
                     'X-CSRF-TOKEN': csrfToken,
                 },
                 body: JSON.stringify({
-                    full_name: form.full_name.value,
+                    first_name: form.first_name.value,
+                    last_name: form.last_name.value,
                     email: form.email.value,
                     contact_number: form.contact_number.value,
                     location: form.location.value,

@@ -25,7 +25,8 @@ class RegistrationApiTest extends TestCase
         Mail::fake();
 
         $response = $this->postJson('/api/register', [
-            'full_name' => 'Juan Dela Cruz',
+            'first_name' => 'Juan',
+            'last_name' => 'Dela Cruz',
             'email' => 'juan@example.com',
             'contact_number' => '+639171234567',
             'location' => 'Quezon City',
@@ -38,6 +39,8 @@ class RegistrationApiTest extends TestCase
 
         $this->assertDatabaseHas('registrations', [
             'email' => 'juan@example.com',
+            'first_name' => 'Juan',
+            'last_name' => 'Dela Cruz',
             'location' => 'Quezon City',
             'organization' => 'Northwind Labs',
         ]);
@@ -48,7 +51,8 @@ class RegistrationApiTest extends TestCase
         Mail::fake();
 
         $this->postJson('/api/register', [
-            'full_name' => 'Juan Dela Cruz',
+            'first_name' => 'Juan',
+            'last_name' => 'Dela Cruz',
             'email' => 'juan@example.com',
             'contact_number' => '+639171234567',
             'location' => 'Quezon City',
@@ -66,7 +70,7 @@ class RegistrationApiTest extends TestCase
         $response = $this->postJson('/api/register', []);
 
         $response->assertStatus(422);
-        $response->assertJsonValidationErrors(['full_name', 'email', 'contact_number', 'location', 'organization']);
+        $response->assertJsonValidationErrors(['first_name', 'last_name', 'email', 'contact_number', 'location', 'organization']);
     }
 
     public function test_ticket_code_is_generated_automatically(): void

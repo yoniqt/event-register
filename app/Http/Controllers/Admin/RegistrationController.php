@@ -18,7 +18,8 @@ class RegistrationController extends Controller
 
         if ($search = $request->string('search')->trim()->value()) {
             $query->where(function ($inner) use ($search) {
-                $inner->where('full_name', 'like', "%{$search}%")
+                $inner->where('first_name', 'like', "%{$search}%")
+                    ->orWhere('last_name', 'like', "%{$search}%")
                     ->orWhere('email', 'like', "%{$search}%")
                     ->orWhere('location', 'like', "%{$search}%")
                     ->orWhere('organization', 'like', "%{$search}%")
