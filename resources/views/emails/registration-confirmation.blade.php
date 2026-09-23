@@ -6,8 +6,7 @@ Hi {{ $registration->full_name }},
 Thanks for registering for **The Autonomous Professional: Unlocking AI & Automation**. Here are your details:
 
 <x-mail::panel>
-Ticket code: **{{ $registration->ticket_code }}**<br>
-Tickets: **{{ $registration->ticket_quantity }}**<br>
+Registration code: **{{ $registration->ticket_code }}**<br>
 When: **5-Day Seminar**<br>
 Where: **Online** — a join link is emailed closer to the event
 </x-mail::panel>
@@ -16,7 +15,7 @@ Where: **Online** — a join link is emailed closer to the event
 View event page
 </x-mail::button>
 
-Keep this email for your records — you may be asked for your ticket code at check-in.
+Keep this email for your records — you may be asked for your registration code at check-in.
 
 Thanks,<br>
 {{ config('app.name') }}
