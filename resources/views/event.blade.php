@@ -104,7 +104,7 @@
 
     <div class="mx-auto grid max-w-6xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-3 lg:py-14">
         <main class="space-y-10 lg:col-span-2">
-            <section>
+            <section id="overview" class="scroll-mt-24">
                 <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Overview</h2>
                 <p class="mt-3 text-slate-600 dark:text-slate-300">
                     Welcome to the Autonomous Professional — your fast-track guide to transforming repetitive
@@ -120,7 +120,7 @@
                 </p>
             </section>
 
-            <section>
+            <section id="lineup" class="scroll-mt-24">
                 <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Line-up</h2>
                 <div class="mt-4 grid gap-4 sm:grid-cols-2">
                     @foreach ($speakers as $speaker)
@@ -160,7 +160,7 @@
                 <p class="mt-3 text-slate-600 dark:text-slate-300">Online event.</p>
             </section>
 
-            <section>
+            <section id="faq" class="scroll-mt-24">
                 <h2 class="text-xl font-semibold text-slate-900 dark:text-white">FAQ</h2>
                 <div class="mt-4 space-y-3">
                     @foreach ($faqs as $faq)
@@ -179,7 +179,7 @@
         </main>
 
         <aside class="lg:col-span-1">
-            <div class="glass-card sticky top-20 p-5 dark:shadow-xl dark:shadow-orange-500/10" id="register">
+            <div class="glass-card sticky top-20 scroll-mt-24 p-5 dark:shadow-xl dark:shadow-orange-500/10" id="register">
                 <p class="text-lg font-semibold text-slate-900 dark:text-white">{{ $event['date_label'] }}</p>
                 <button type="button" data-open-modal class="mt-4 w-full rounded-full bg-orange-600 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-orange-500/20 transition-all hover:bg-orange-500 hover:shadow-lg hover:shadow-orange-500/25">
                     Register
@@ -194,37 +194,19 @@
 
     <footer class="border-t border-slate-800 bg-slate-950 text-slate-400">
         <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="grid gap-8 sm:grid-cols-2">
                 <div>
                     <h3 class="text-sm font-semibold text-white">Event</h3>
                     <ul class="mt-3 space-y-2 text-sm">
-                        <li><a href="#" class="transition hover:text-orange-400">Overview</a></li>
-                        <li><a href="#" class="transition hover:text-orange-400">Line-up</a></li>
-                        <li><a href="#" class="transition hover:text-orange-400">FAQ</a></li>
+                        <li><a href="#overview" class="transition hover:text-orange-400">Overview</a></li>
+                        <li><a href="#lineup" class="transition hover:text-orange-400">Line-up</a></li>
+                        <li><a href="#faq" class="transition hover:text-orange-400">FAQ</a></li>
                         <li><a href="#register" class="transition hover:text-orange-400">Register</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-sm font-semibold text-white">Organizer</h3>
+                    <h3 class="text-sm font-semibold text-white">Contact</h3>
                     <ul class="mt-3 space-y-2 text-sm">
-                        <li><a href="#" class="transition hover:text-orange-400">About {{ $organizer['name'] }}</a></li>
-                        <li><a href="mailto:{{ $event['contact_email'] }}" class="transition hover:text-orange-400">Contact organizer</a></li>
-                        <li><a href="#" class="transition hover:text-orange-400">Report this event</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-white">Resources</h3>
-                    <ul class="mt-3 space-y-2 text-sm">
-                        <li><a href="#" class="transition hover:text-orange-400">Help center</a></li>
-                        <li><a href="#" class="transition hover:text-orange-400">Terms of service</a></li>
-                        <li><a href="#" class="transition hover:text-orange-400">Privacy policy</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-white">Connect</h3>
-                    <ul class="mt-3 space-y-2 text-sm">
-                        <li><a href="#" class="transition hover:text-orange-400">X (Twitter)</a></li>
-                        <li><a href="#" class="transition hover:text-orange-400">LinkedIn</a></li>
                         <li><a href="mailto:{{ $event['contact_email'] }}" class="transition hover:text-orange-400">Email us</a></li>
                     </ul>
                 </div>
